@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0530</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Weblorg</title>
+      <link>http://example.org/posts/allfile/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0530</pubDate>
+      
+      <guid>http://example.org/posts/allfile/</guid>
+      <description>DONE Intro Weblorg is a Static HTML Website Generator. It&amp;rsquo;s built with Emacs Lisp and takes advantage of the powers of Org-Mode as the source format, and makes it easy to extend and customize the structure and the theme of the generated website.
+It&amp;rsquo;s easy to run Weblorg from a CI or from any other automated environment with emacs &amp;ndash;script publish.el from the root of your website.
+DONE Templating To make it more natural for people that have used other tools for generating websites, Weblorg leverages templatel, a library that provides a familiar syntax for stitching reusable templates together for creating websites.</description>
+    </item>
+    
+    <item>
+      <title>Journey</title>
+      <link>http://example.org/posts/another/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/another/</guid>
+      <description>Small info/log on my linux journey and my experience.
+If you are reading this, I encourage you to write blogs like this and have it in your git repo. Don&amp;rsquo;t forget to tag or inform me, I&amp;rsquo;d be glad to read your journey too!
+tools section
+My Linux Journey My linux journey was from Linux Mint &amp;gt; EndeavourOS &amp;gt; Arch Linux &amp;gt; and now NixOS.
+Tbh I loved LM and Arch alot, I was a devotee to Arch too, and I hated Nix when I tried, cause things were weird.</description>
+    </item>
+    
+    <item>
+      <title>Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;</title>
+      <link>http://example.org/posts/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/tools/</guid>
+      <description>Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi + Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol.</description>
+    </item>
+    
+  </channel>
+</rss>

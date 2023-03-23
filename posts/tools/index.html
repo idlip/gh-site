@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true; | My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi &#43; Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol.">
+<meta name="author" content="Myselfa">
+<link rel="canonical" href="http://example.org/posts/tools/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;" />
+<meta property="og:description" content="Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi &#43; Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/tools/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;"/>
+<meta name="twitter:description" content="Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi &#43; Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://example.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;",
+      "item": "http://example.org/posts/tools/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;",
+  "name": "Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;",
+  "description": "Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi + Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol.",
+  "keywords": [
+    
+  ],
+  "articleBody": " Utilities that are Best! 🌟 Class Name Window Manager Hyprland 🌸 Text Editor Emacs 💮 Gtk Theme Gruvbox / Orchis 🎨 Font Comic Code / Comic Mono / Fira Code Pdf Reader Sioyek 📔 (ditch zathura) Media Player MPV! 🎬 (its MVP too) Image Viewer Imv 🖼️ RSS Reader Elfeed 📰 (Again, Emacs) Music Player Ncmpcpp or Mingus in Emacs 🎶 Terminal Foot via footclient ⚽ Menu/Launcher Bemenu 🚀 Notification Dunst 🛎️ Shell Zshell with Starship 🔰 Status Bar Waybar 🍥 Favourite Color-Schemes Modus-Vivendi + Gruvbox Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol.\nFeel free to open an issue and ask me doubts or about some improvements, you wanna inform! I will be glad. If you really wanna talk/discuss with me, open an issue so I will join on some media (Irc/matrix or telegram)\nOrganized Nix Flakes? 🌲 I manage my whole system with single org file. Its easy and pretty handy. You can read that file here ↬ d-setup.org , its both self documenting and has all source code blocks.\nAnother key feature in my setup is, every file i tangle is at read-only mode. So generally we can avoid editing/touching them. Thus, every action has to be made in d-setup.org only.\nAlso, I have made files to be symlink, so i can edit them without requiring to rebuild whole thing!\nNote: There are #FIXME tags in d-setup.org where you should edit it accordingly to your USERNAME and HOSTNAME. I have tried to comment few things to make it as a info, you can ask/create issue regarding this, don’t hold back. I’m waiting for you to ask! Welcome to ‘Will of D’ flakes system ⚔️ you can check out small write-up on my linux journey\nNow if you get doubt of, “Should I try NixOS?” ❄️ Here is an answer from a non-programmer, who just browses and watches media. Just don’t, if you are looking for small benefit. Don’t! You will regret having hard time to figure out petty things, again forget about error, you cannot even search in web.\nBut, if you have decided, go with it. According to me (non-programmer), these points are good to consider NixOS\nYou use Emacs (lol), Emacs ❤️ Nix is Match made in Heaven. You want to declare stuffs and get same output, and forget what all you setup, cause its all declared in config. You want an isolated environments (shell) to do some stuffs without involving whole system. You want to stop troubleshooting and breaking update and are lazy to backup, and want to rollback with ease like with just a reboot. You want to say I use Nixos Btw. Pack your bags, lets go through our configuration! ✨ Before that I believe you are a tinkerer, I have a motto which goes like this\nIf you want to understand the whole, Understand its parts. Gestalt Psychology\nI mean, that is how *Nix Philosophy or Linux users are, We understand each utility (grep, sed…) and make precise use of it, You can technically call it Magic of scripting.\nCredits 🎖️\nThese configs were the inspiration and helped to build this way.\nI thank them sincerely.\nIron Shark ⟹ Made migrating to Single org-file config very easy.\nSioodmy ⟹ First config which I understand thoroughly and modified based on this.\nSoon will be more documented…….\n",
+  "wordCount" : "562",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Myselfa"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/posts/tools/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "My New Hugo Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Tools Nix-Org, A Simply Aesthetic, Productive setup with Declaration World! Just do enable=true;
+    </h1>
+    <div class="post-meta">Myselfa
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h4 id="utilities-that-are-best">Utilities that are Best! 🌟<a hidden class="anchor" aria-hidden="true" href="#utilities-that-are-best">#</a></h4>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Window Manager</td>
+<td><a href="https://hyprland.org/">Hyprland</a> 🌸</td>
+</tr>
+<tr>
+<td>Text Editor</td>
+<td><a href="https://www.gnu.org/software/emacs/">Emacs</a> 💮</td>
+</tr>
+<tr>
+<td>Gtk Theme</td>
+<td><a href="https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme">Gruvbox</a> / <a href="https://github.com/vinceliuice/Orchis-theme">Orchis</a> 🎨</td>
+</tr>
+<tr>
+<td>Font</td>
+<td><a href="https://tosche.net/fonts/comic-code">Comic Code</a> / <a href="https://github.com/dtinth/comic-mono-font">Comic Mono</a> / <a href="https://github.com/tonsky/FiraCode">Fira Code</a></td>
+</tr>
+<tr>
+<td>Pdf Reader</td>
+<td><a href="https://github.com/ahrm/sioyek">Sioyek</a> 📔 (ditch zathura)</td>
+</tr>
+<tr>
+<td>Media Player</td>
+<td><a href="https://mpv.io">MPV!</a> 🎬 (its MVP too)</td>
+</tr>
+<tr>
+<td>Image Viewer</td>
+<td><a href="https://sr.ht/~exec64/imv/">Imv</a> 🖼️</td>
+</tr>
+<tr>
+<td>RSS Reader</td>
+<td><a href="https://github.com/skeeto/elfeed">Elfeed</a> 📰 (Again, Emacs)</td>
+</tr>
+<tr>
+<td>Music Player</td>
+<td><a href="https://github.com/ncmpcpp/ncmpcpp">Ncmpcpp</a> or <a href="https://github.com//mingus">Mingus in Emacs</a> 🎶</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td><a href="https://codeberg.org/dnkl/foot">Foot</a> via footclient ⚽</td>
+</tr>
+<tr>
+<td>Menu/Launcher</td>
+<td><a href="https://github.com/Cloudef/bemenu">Bemenu</a> 🚀</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td><a href="https://github.com/dunst/dunst">Dunst</a>  🛎️</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><a href="https://zsh.org">Zshell</a> with <a href="https://starship.rs">Starship</a> 🔰</td>
+</tr>
+<tr>
+<td>Status Bar</td>
+<td><a href="https://github.com/Alexays/Waybar">Waybar</a>  🍥</td>
+</tr>
+<tr>
+<td>Favourite Color-Schemes</td>
+<td>Modus-Vivendi + Gruvbox</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Rest all other stuffs I do in Emacs, tbh I could do everything in Emacs lol.</p>
+</blockquote>
+<p>Feel free to open an issue and ask me doubts or about some improvements, you wanna inform! I will be glad.
+If you really wanna talk/discuss with me, open an issue so I will join on some media (Irc/matrix or telegram)</p>
+<h2 id="organized-nix-flakes">Organized Nix Flakes? 🌲<a hidden class="anchor" aria-hidden="true" href="#organized-nix-flakes">#</a></h2>
+<p>I manage my whole system with single org file. Its easy and pretty handy. You can read that file here <strong>↬</strong> d-setup.org , its both self documenting and has all source code blocks.</p>
+<p>Another key feature in my setup is, every file i tangle is at <strong>read-only mode</strong>. So generally we can avoid editing/touching them. Thus, every action has to be made in <strong>d-setup.org</strong> only.</p>
+<p>Also, I have made files to be <strong>symlink</strong>, so i can edit them without requiring to rebuild whole thing!</p>
+<hr>
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+<div class="org-center">
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Note</strong>: There are <strong>#FIXME tags in d-setup.org</strong> where you should edit it accordingly to your <strong>USERNAME</strong> and <strong>HOSTNAME</strong>.   I have tried to comment few things to make it as a info, you can <span class="underline">ask/create issue</span> regarding this, don&rsquo;t hold back.   <strong>I&rsquo;m waiting for you to ask!</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="welcome-to-will-of-d-flakes-system-️">Welcome to &lsquo;Will of D&rsquo; flakes system ⚔️<a hidden class="anchor" aria-hidden="true" href="#welcome-to-will-of-d-flakes-system-️">#</a></h3>
+<blockquote>
+<p><em>you can check out small write-up on my linux journey</em></p>
+</blockquote>
+<h4 id="now-if-you-get-doubt-of-should-i-try-nixos-️">Now if you get doubt of, &ldquo;Should I try NixOS?&rdquo; ❄️<a hidden class="anchor" aria-hidden="true" href="#now-if-you-get-doubt-of-should-i-try-nixos-️">#</a></h4>
+<p>Here is an answer from a non-programmer, who just browses and watches media.
+Just don&rsquo;t, if you are looking for small benefit. Don&rsquo;t!
+You will regret having hard time to figure out petty things, again forget about error, you cannot even search in web.</p>
+<p>But, if you have decided, go with it. According to me (non-programmer), these points are good to consider NixOS</p>
+<ul>
+<li>You use Emacs (lol), <strong>Emacs</strong> ❤️  <strong>Nix</strong> is Match made in Heaven.</li>
+<li>You want to declare stuffs and get same output, and forget what all you setup, cause its all declared in config.</li>
+<li>You want an isolated environments (shell) to do some stuffs without involving whole system.</li>
+<li>You want to stop troubleshooting and breaking update and are lazy to backup, and want to rollback with ease like with just a reboot.</li>
+<li>You want to say I use <strong>Nixos Btw</strong>.</li>
+</ul>
+<h3 id="pack-your-bags-lets-go-through-our-configuration">Pack your bags, lets go through our configuration! ✨<a hidden class="anchor" aria-hidden="true" href="#pack-your-bags-lets-go-through-our-configuration">#</a></h3>
+<p>Before that I believe you are a tinkerer, I have a motto which goes like this</p>
+<blockquote>
+<p><em>If you want to understand the whole, Understand its parts</em>. <strong><a href="https://www.verywellmind.com/what-is-gestalt-psychology-2795808">Gestalt Psychology</a></strong></p>
+</blockquote>
+<p>I mean, that is how *Nix Philosophy or Linux users are, We understand each utility (grep, sed&hellip;) and make precise use of it, You can technically call it Magic of scripting.</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>Credits 🎖️</p>
+<p>These configs were the inspiration and helped to build this way.</p>
+<p>I thank them sincerely.</p>
+<p><a href="https://github.com/Iron-Shark/Technonomicon">Iron Shark</a> <strong>⟹</strong> Made migrating to Single org-file config very easy.</p>
+<p><a href="https://github.com/sioodmy/dotfiles">Sioodmy</a> <strong>⟹</strong> First config which I understand thoroughly and modified based on this.</p>
+<hr>
+ <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+ <div class="org-center">
+<p>Soon will be more documented&hellip;&hellip;.</p>
+ </div>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://example.org/">My New Hugo Site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
